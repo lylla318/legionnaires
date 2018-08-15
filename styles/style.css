@@ -1,0 +1,67 @@
+@font-face {
+    font-family: MarkPro;
+    src: url("fonts/MarkPro.otf");
+}
+
+@font-face {
+    font-family: MarkPro;
+    src: url("fonts/MarkPro-Bold.otf");
+    font-weight: bold;
+}
+
+@font-face{
+    font-family: "GT-America";
+    src: url('fonts/GT-America-Mono-Light-v1.otf')
+}
+
+
+.flex-grid-thirds {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-grid-thirds .col {
+  width: 25%;
+}
+
+@media (max-width: 400px) {
+  .flex-grid,
+  .flex-grid-thirds {
+    display: block;
+    .col {
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 20px;
+}
+.flex-grid { 
+  margin: 0 0 20px 0;
+}
+.col {
+  /*background: salmon;*/
+  padding: 20px;
+}
+
+.grid path.domain {
+  stroke: #ddd;
+}
+
+.grid line {
+  stroke: lightgrey;
+  stroke-opacity: 0.7;
+  shape-rendering: crispEdges;
+}
+
+.grid path {
+  stroke-width: 0;
+}
+
+.chart {
+  margin:200px;
+}
